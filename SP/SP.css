@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --pink1:#f8b2cb;
+    --pink2:#f9bdd2;
+    --pink:#f870c0;
+    --pink3:#f691b4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration:none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/*navbar starts*/
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);  
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header i{
+    color:var(--pink3);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--pink);
+
+}
+/*navbar ends*/
+
+/*SP done starts*/
+.factors{
+    width: 80%;
+    margin: auto;
+    text-align:center;
+    padding-top:150px;   
+}
+
+.factors span{
+    color:var(--pink);
+    
+}
+
+h1{
+    font-size:32px;
+    font-weight: 500;
+}
+
+
+h3{
+    font-size:16px;
+    font-weight: 500;
+}
+
+p{
+    color:#777;
+    font-size:14px;
+    font-weight: 300;
+    padding:1rem;
+}
+
+.row1 , .row2{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.v-col{
+    margin-top:20px;
+    background: #fff;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding:30px;
+    box-sizing: border-box;
+    flex-basis: 31%;
+  
+}
+h3{
+    text-align:center;
+    font-weight: 600;
+    margin:10px 0;
+}
+
+.v-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/* SP done ends*/
+
+body{
+    margin:0;
+    padding:0;
+    background:var(--pink2);
+}
+
+/* flora starts*/
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 4fr);
+    grid-gap: 10px;
+}
+
+.image-item {
+    width: 100%;
+    height: auto;
+    
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10%;
+    padding: 10px;
+    
+}
+
+.image-item img :hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/* flora ends*/
+
+/*piccap starts*/
+
+.piccap{
+    margin: 50px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url(spimg.png);/*img from this web: https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters*/
+    background-position: center;
+    background-size: cover;
+    border-radius:20px;
+    text-align:center;
+    padding: 100px 0;
+}
+
+.piccap h1{
+    color:#333;
+    margin-bottom:20px;
+    padding:30px;
+    font-weight: 500;
+   
+}
+/*piccap ends*/
+
+
+/* icon+cap starts*/
+
+.title{
+    text-align: center;
+    padding-top:30px;
+    font-size: 25px;
+}
+.box-container{
+    width: 80%;
+    margin: 30px auto;
+    
+    padding:20px;
+    background: var(--pink2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.box-container a{
+    color:#333;
+    text-decoration:underline var(--pink);
+}
+
+.ssbox1 , .ssbox2 , .ssbox3{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.box-container .boxs{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    flex-grow:1;
+}
+
+.box-container .boxs img{
+    height:5rem;
+    margin-right: 2rem;
+}
+
+.box-container .boxs h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.box-container .boxs span{
+    color:#666;
+    font-size: 1.3rem;
+}
+
+.box-container ul{
+    font-weight: 300;
+    padding: 1.5rem;
+    opacity: 0.8;
+    text-align:start;
+    line-height: 2px;
+    font-weight:500;
+    font-size: medium;
+}
+
+.box-container ul>i {
+    color:var(--pink3);
+    margin-right: 15px;
+}
+
+.box-container p{
+    color:var(--pink3);
+    
+}
+
+/*testimonials starts*/
+.spaction{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align:center;
+}
+
+.spaction h1{
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.spaction p{
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.spaction-col{
+    flex-basis:20%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    text-align:left;
+    background: #f5dce4;
+    padding:25px;
+    cursor: pointer;
+    display: flex;
+    
+}
+
+.spaction-col img{
+    width: 40%;
+    padding-top: 5px;
+    
+    margin-left: 5px;
+    margin-right: 20px;
+    border-radius: 10%;
+}
+
+.spaction-col p{
+    padding:0;
+
+}
+
+.spaction-col h3{
+    margin-top: 15px;
+    text-align:left;
+}
+
+.spaction-col .fa-solid{
+    color:var(--pink3);
+}
+/*spaction ends*/
+
+
+
+/* sign up starts*/
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+  
+h1 {
+    font-size: 24px;
+}
+  
+.container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centers the form-container horizontally */
+    align-items: center; /* Centers the form-container vertically if the container has a height */
+    height: 100%;
+}
+.form-container {
+    border: 2px solid #333; 
+    padding: 20px;
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-top: 20px;
+    width: fit-content;
+}
+  
+form {
+    display: inline-block;
+    text-align: left;
+}
+  
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+  
+.input {
+    width: 200px;
+    padding: 5px;
+    margin-top: 5px;
+}
+  
+.btn {
+    background-color:#777;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10%;
+}
+  
+.btn:hover {
+    background-color:var(--pink);
+}
+  
+p {
+    margin-top: 20px;
+}
+  
+.contact iframe {
+    margin-top: 20px;
+}
+  /* sign up ends*/
